@@ -10,5 +10,4 @@ public class DataService : ISprint1Task0V11
     {
         return 4 * 5 / 2 - 18 / 2 / 3;
     }
-#pragma comment (lib, "<путь к lib-файлу>") 
 }
