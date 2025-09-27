@@ -30,8 +30,7 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        //Метод Calculate находится в библиотеке Tyuiu.FilevaPA.Sprint1.Task0.V11.Lib
-        //в классе DataService
+        
         
 
         Console.WriteLine(ds.Calculate());
