@@ -36,4 +36,5 @@ internal class Program
         Console.WriteLine(ds.Calculate());
         Console.ReadLine();
     }
+#pragma comment (lib, "<путь к lib-файлу>")
 }

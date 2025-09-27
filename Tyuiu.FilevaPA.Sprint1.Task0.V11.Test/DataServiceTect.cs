@@ -13,5 +13,6 @@ namespace Tyuiu.FilevaPA.Sprint1.Task0.V11.Test
             var res = ds.Calculate();
             Assert.AreEqual(7, res);
         }
+#pragma comment (lib, "<путь к lib-файлу>")
     }
 }
