@@ -1,16 +1,17 @@
 ﻿using Tyuiu.FilevaPA.Sprint1.Task0.V11.Lib;
-namespace Tyuiu.FilevaPA.Sprint1.Task0.V11.Test;
+using Tyuiu.FilevaPA.Sprint1.Task0.V11.Lib;
 
-[TestClass]
-public sealed class DataServiceTect
+namespace Tyuiu.DyakovMS.Sprint1.Task0.V1.Test
 {
-    [TestMethod]
-    public void ValidExpression()
-
+    [TestClass]
+    public class DataServiceTest
     {
-        DataServiceTect ds = new DataService();
-        var res = ds.Calculate();
-        Assert.AreEqual(7, res);
-
+        [TestMethod]
+        public void TestMethod1()
+        {
+            DataService ds = new DataService();
+            var res = ds.Calculate();
+            Assert.AreEqual(7, res);
+        }
     }
 }
