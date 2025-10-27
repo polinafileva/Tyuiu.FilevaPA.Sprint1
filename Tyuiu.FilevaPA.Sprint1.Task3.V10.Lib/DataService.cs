@@ -3,7 +3,7 @@ using Tyuiu.FilevaPA.Sprint1.Task3.V10.Lib;
 using tyuiu.cources.programming.interfaces.Sprint1;
 
 
-public class DataService 
+public class DataService : ISprint1Task3V10
 {
 
     public string ConvertToMoneyFormat(double number)
