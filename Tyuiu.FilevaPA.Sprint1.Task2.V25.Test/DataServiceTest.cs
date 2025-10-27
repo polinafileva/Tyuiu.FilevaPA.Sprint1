@@ -10,9 +10,9 @@ public sealed class DataServiceTest
     public void TestMethod1()
     {
         DataService ds = new DataService();
-        int radians = 1;
-        double result = ds.ConvertRadsToDegrees(radians);
-        Assert.AreEqual(57.296, result, 0.001);
+        int radians = 2; // приблизительно π/2 радиан
+        double wait = 114.592;
+        double res = ds.ConvertRadsToDegrees(radians);
+        Assert.AreEqual(wait, res);
     }
-}
 }

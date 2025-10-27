@@ -7,6 +7,10 @@ public class DataService : ISprint1Task2V25
 {
     public double ConvertRadsToDegrees(int value)
     {
-        return Math.Round(value * (180.0 / Math.PI), 3);
+        // Формула перевода радиан в градусы: градусы = радианы * (180 / π)
+        double degrees = value * (180.0 / Math.PI);
+
+        // Округляем до 3 знаков после запятой
+        return Math.Round(degrees, 3);
     }
 }
