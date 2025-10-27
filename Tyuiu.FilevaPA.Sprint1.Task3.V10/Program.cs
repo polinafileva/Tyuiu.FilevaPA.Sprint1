@@ -9,21 +9,27 @@ internal class Program
     private static void Main(string[] args)
 
     {
-       DataService ds = new DataService();  
+        DataService ds = new DataService();
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
         Console.WriteLine("Введите дробное число:");
-        double number = Convert.ToDouble(Console.ReadLine());
+        string input = Console.ReadLine();
+
+        // Заменяем запятую на точку для корректного преобразования
+        input = input.Replace(',', '.');
+        double number = Convert.ToDouble(input);
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
+        // Получаем результат из DataService
+        string result = ds.ConvertToMoneyFormat(number);
+        Console.WriteLine(result);
 
-        Console.WriteLine("{number} руб. — это {rubles} руб. {kopecks} коп.");
         Console.ReadKey();
     }
 }

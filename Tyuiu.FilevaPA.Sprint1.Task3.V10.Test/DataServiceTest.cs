@@ -5,11 +5,17 @@ using Tyuiu.FilevaPA.Sprint1.Task3.V10.Lib;
 public sealed class DataServiceTest
 {
     [TestMethod]
-    public void ValidNumberToMoney()
+    public void ValidConvert30_5WithComma()
     {
         DataService ds = new DataService();
-        double number = 23.6;
-        string res = ds.NumberToMoney(number);
-        Assert.AreEqual("23 руб. 60 коп.", res);
+
+        // Тестируем с числом 30.5 (как будто ввели "30,5")
+        double number = 30.5;
+        string result = ds.ConvertToMoneyFormat(number);
+
+        // Ожидаемый результат
+        string expected = "30.5 руб. - это 30 руб. 50 коп.";
+
+        Assert.AreEqual(expected, result);
     }
 }
