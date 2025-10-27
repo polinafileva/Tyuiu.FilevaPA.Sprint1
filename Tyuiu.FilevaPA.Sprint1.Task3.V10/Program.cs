@@ -1,4 +1,5 @@
-﻿using Tyuiu.FilevaPA.Sprint1.Task3.V10.Lib;
+﻿using System.Data;
+using Tyuiu.FilevaPA.Sprint1.Task3.V10.Lib;
 
 namespace Tyuiu.FilevaPA.Sprint1.Task3.V10
     ;
@@ -21,8 +22,8 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-       
-        Console.WriteLine("{number} руб. — это {rubels} руб. {kopecksRounded:D2} коп.");
+
+        Console.WriteLine("{number} руб. — это {rubles} руб. {kopecks} коп.");
         Console.ReadKey();
     }
 }
