@@ -5,7 +5,7 @@ using Tyuiu.FilevaPA.Sprint1.Task4.V12.Lib;
 public sealed class DataServiceTest
 {
     [TestMethod]
-    public void TestMethod1()
+    public void ValidCalculateTest1()
     {
         DataService ds = new DataService();
         double x = 0;
