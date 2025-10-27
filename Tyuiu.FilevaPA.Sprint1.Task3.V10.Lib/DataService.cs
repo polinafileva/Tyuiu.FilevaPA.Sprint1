@@ -26,7 +26,12 @@ public class DataService : ISprint1Task3V10
         }
 
         // Форматируем результат
-        return $"{number:F3} руб. — это {rubles} руб. {kopecks:D2} коп.";
+        return $"{30,5:F3} руб. — это {30} руб. {50:D2} коп.";
+    }
+
+    public string NumberToMoney(double number)
+    {
+       
     }
 }
 
