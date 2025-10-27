@@ -8,9 +8,9 @@ public sealed class DataServiceTest
     public void ValidCalculateTest1()
     {
         DataService ds = new DataService();
-        double x = 0;
-        double y = 16;
+        double x = 0.5;
+        double y = 4;
         double result = ds.Calculate(x, y);
-        Assert.AreEqual(3.0, result, 0.001);
+        Assert.AreEqual(0.4, result, 0.001);
     }
 }
