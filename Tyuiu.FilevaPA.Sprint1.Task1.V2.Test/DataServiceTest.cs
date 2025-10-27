@@ -8,7 +8,7 @@ public sealed class DataServiceTest
     public void TestMethod1()
     {
         DataService ds = new DataService();
-        double x = 1.0;
+        double x = 1.;
         double y = 2.0;
         var res = ds.Calculate(x, y);
         Assert.AreEqual(1.0 / 3.0, res);
