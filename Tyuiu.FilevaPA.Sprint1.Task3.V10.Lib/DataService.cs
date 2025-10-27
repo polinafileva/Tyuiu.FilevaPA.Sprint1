@@ -25,8 +25,8 @@ public class DataService : ISprint1Task3V10
             kopecks = 0;
         }
 
-        // Форматируем результат согласно ожидаемому формату
-        // Используем F1 для number чтобы было "30.5" а не "30.500"
-        return $"{number:F1} руб. - это {rubles} руб. {kopecks:D2} коп.";
+        // Форматируем результат
+        return $"{number:F3} руб. — это {rubles} руб. {kopecks:D2} коп.";
     }
 }
+
