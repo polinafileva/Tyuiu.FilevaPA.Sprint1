@@ -27,6 +27,7 @@ internal class Program
         Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
         Console.WriteLine("***************************************************************************");
 
+
         Console.Write("Введите дробное число: ");
         string input = Console.ReadLine();
 
@@ -51,3 +52,4 @@ internal class Program
         Console.ReadKey();
     }
 }
+
