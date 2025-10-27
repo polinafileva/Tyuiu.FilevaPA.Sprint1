@@ -9,7 +9,7 @@ public sealed class DataServiceTest
     {
         DataService ds = new DataService();
         double number = 30.5;
-        string wait = "30,5 руб. - это 30 руб. 50 коп.";
+        string wait = "30.5 руб. - это 30 руб. 50 коп.";
         string res = ds.NumberToMoney(number);
         Assert.AreEqual(wait, res);
     }
