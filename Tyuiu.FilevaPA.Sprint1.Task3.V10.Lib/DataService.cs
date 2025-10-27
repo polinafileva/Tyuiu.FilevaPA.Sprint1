@@ -27,8 +27,8 @@ public class DataService : ISprint1Task3V10
             kopecks = 0;
         }
 
-        // Форматируем результат с запятой и одним знаком после запятой
-        string formattedNumber = number.ToString("0.0", CultureInfo.GetCultureInfo("ru-RU"));
+        // Форматируем результат ТОЧНО как в ожидании
+        string formattedNumber = number.ToString("0.0", System.Globalization.CultureInfo.InvariantCulture);
         string result = formattedNumber + " руб. - это " + rubles + " руб. " + kopecks.ToString("00") + " коп.";
 
         return result;
