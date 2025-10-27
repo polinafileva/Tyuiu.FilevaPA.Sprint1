@@ -6,7 +6,7 @@ using tyuiu.cources.programming.interfaces.Sprint1;
 public class DataService : ISprint1Task3V10
 {
 
-    public string ConvertToMoneyFormat(double number)
+    public string NumberToMoney(double number)
     {
         // Округляем до 3 знаков после запятой
         double roundedNumber = Math.Round(number, 3);
@@ -26,12 +26,8 @@ public class DataService : ISprint1Task3V10
         }
 
         // Форматируем результат
-        return $"{30,5:F3} руб. — это {30} руб. {50:D2} коп.";
-    }
-
-    public string NumberToMoney(double number)
-    {
-       
+        string result = number.ToString("F3") + " руб. — это " + rubles + " руб. " + kopecks.ToString("D2") + " коп.";
+        return result;
     }
 }
-
+    

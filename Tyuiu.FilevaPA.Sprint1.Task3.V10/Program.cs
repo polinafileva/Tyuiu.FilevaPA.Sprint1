@@ -32,18 +32,22 @@ internal class Program
 
         // Обрабатываем ввод с запятой
         input = input.Replace(',', '.');
-        double number = Convert.ToDouble(input, CultureInfo.InvariantCulture);
+        double number;
+
+        if (!double.TryParse(input, System.Globalization.NumberStyles.Any, System.Globalization.CultureInfo.InvariantCulture, out number))
+        {
+            Console.WriteLine("Ошибка: введено некорректное число");
+            Console.ReadKey();
+            return;
+        }
 
         Console.WriteLine("***************************************************************************");
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        string result = ds.ConvertToMoneyFormat(number);
+        string result = ds.NumberToMoney(number);
         Console.WriteLine(result);
 
         Console.ReadKey();
     }
 }
-
-  
-
