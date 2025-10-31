@@ -31,32 +31,8 @@ internal class Program
         Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
         Console.WriteLine("***************************************************************************");
 
-        int result = ds.FahrenheitToСelsius(fahrenheit);
+        int result = ds.FahrenheitToCelsius(fahrenheit);
         Console.WriteLine($"Температура в градусах Цельсия: {result}°C");
-
-        Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* ПРОВЕРКА РАБОТЫ Convert:                                                *");
-        Console.WriteLine("***************************************************************************");
-
-        // Демонстрация работы Convert
-        double exactCelsius = (fahrenheit - 32) * 5 / 9;
-        int roundedCelsius = Convert.ToInt32(exactCelsius);
-
-        Console.WriteLine($"Точное значение: {exactCelsius:F2}°C");
-        Console.WriteLine($"После Convert.ToInt32(): {roundedCelsius}°C");
-        Console.WriteLine($"Результат метода: {result}°C");
-
-        Console.WriteLine("***************************************************************************");
-        Console.WriteLine("* ПРИМЕРЫ КОНВЕРТАЦИИ:                                                    *");
-        Console.WriteLine("***************************************************************************");
-
-        // Примеры работы метода
-        double[] testTemps = { 32, 212, 68, -40, 77 };
-        foreach (double temp in testTemps)
-        {
-            int celsius = ds.FahrenheitToСelsius(temp);
-            Console.WriteLine($"{temp}°F = {celsius}°C");
-        }
 
         Console.ReadKey();
     }

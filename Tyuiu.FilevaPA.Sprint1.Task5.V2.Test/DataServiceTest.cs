@@ -8,11 +8,11 @@ public sealed class DataServiceTest
     public void TestMethod1()
     {
         var dataService = new DataService();
-        // Дробное значение с округлением
+        // Дробное значение
         double fahrenheit5 = 77;
-        int wait5 = 25; // 25°C (77°F = 25°C точно)
-        int result5 = ds.FahrenheitToСelsius(fahrenheit5);
+        int wait5 = 25;
+        int result5 = ds.FahrenheitToCelsius(fahrenheit5);
         Assert.AreEqual(wait5, result5);
-
-    }
+    
+}
 }
