@@ -12,8 +12,7 @@ public sealed class DataServiceTest
         // Дробное значение
         double fahrenheit5 = 77;
         int wait5 = 25;
-        int result5 = ds.FahrenheitToСelsius (fahrenheit5);
+        int result5 = dataService.FahrenheitToCelsius(fahrenheit5);
         Assert.AreEqual(wait5, result5);
-
     }
 }
